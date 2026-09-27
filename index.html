@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nosso Universo ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         TELA DE ENTRADA
+    ========================================= -->
+
+    <main class="intro" id="intro">
+
+        <div class="stars" id="stars"></div>
+
+        <div class="intro-content">
+
+            <span class="date">
+                27 · 09 · 2025
+            </span>
+
+            <h1>
+                Foi aqui que<br>
+                nosso universo começou.
+            </h1>
+
+            <p>
+                Uma pequena história sobre nós.
+            </p>
+
+            <button
+                type="button"
+                id="startButton">
+
+                ENTRAR NO NOSSO UNIVERSO
+
+                <span>✦</span>
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================
+         UNIVERSO
+    ========================================= -->
+
+    <main
+        class="universe"
+        id="universe">
+
+        <!-- ====================================
+             ESTRELAS DO FUNDO
+        ===================================== -->
+
+        <div
+            class="universe-stars"
+            id="universeStars">
+        </div>
+
+
+        <!-- ====================================
+             CABEÇALHO
+        ===================================== -->
+
+        <header class="universe-header">
+
+            <span>
+                O NOSSO UNIVERSO
+            </span>
+
+            <h2>
+                Algumas estrelas<br>
+                guardam histórias.
+            </h2>
+
+            <p>
+                Explore as estrelas e descubra as nossas.
+            </p>
+
+        </header>
+
+
+        <!-- ====================================
+             CONSTELAÇÃO PRINCIPAL
+        ===================================== -->
+
+        <section
+            class="constellation"
+            aria-label="Constelação das nossas memórias">
+
+
+            <!-- =================================
+                 PLANETA CENTRAL
+            ================================== -->
+
+            <div class="planet">
+
+                <div class="planet-glow"></div>
+
+                <div class="planet-ring"></div>
+
+                <div
+                    class="planet-body"
+                    aria-hidden="true">
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+                 LINHAS DA CONSTELAÇÃO
+            ================================== -->
+
+            <svg
+                class="constellation-lines"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true">
+
+                <line
+                    x1="20"
+                    y1="30"
+                    x2="38"
+                    y2="48">
+                </line>
+
+                <line
+                    x1="38"
+                    y1="48"
+                    x2="55"
+                    y2="32">
+                </line>
+
+                <line
+                    x1="55"
+                    y1="32"
+                    x2="72"
+                    y2="50">
+                </line>
+
+                <line
+                    x1="72"
+                    y1="50"
+                    x2="55"
+                    y2="68">
+                </line>
+
+                <line
+                    x1="55"
+                    y1="68"
+                    x2="38"
+                    y2="48">
+                </line>
+
+                <line
+                    x1="38"
+                    y1="48"
+                    x2="25"
+                    y2="70">
+                </line>
+
+                <line
+                    x1="72"
+                    y1="50"
+                    x2="82"
+                    y2="75">
+                </line>
+
+            </svg>
+
+
+            <!-- =================================
+                 MEMÓRIA — 2024
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star"
+                data-memory="2024"
+                style="left: 20%; top: 30%;"
+                aria-label="Memória de 2024">
+
+                <span class="star-core">
+                    ✦
+                </span>
+
+                <span class="star-label">
+                    2024
+                </span>
+
+            </button>
+
+
+            <!-- =================================
+                 MEMÓRIA — 11/03/2025
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star"
+                data-memory="conversation"
+                style="left: 38%; top: 48%;"
+                aria-label="Memória de 11 de março de 2025">
+
+                <span class="star-core">
+                    ✦
+                </span>
+
+                <span class="star-label">
+                    11.03.2025
+                </span>
+
+            </button>
+
+
+            <!-- =================================
+                 PRIMEIRO ENCONTRO
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star"
+                data-memory="first-date"
+                style="left: 55%; top: 32%;"
+                aria-label="Primeiro encontro em 30 de julho de 2025">
+
+                <span class="star-core">
+                    ✦
+                </span>
+
+                <span class="star-label">
+                    30.07.2025
+                </span>
+
+            </button>
+
+
+            <!-- =================================
+                 SÍTIO
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star"
+                data-memory="farm"
+                style="left: 72%; top: 50%;"
+                aria-label="Memória do sítio">
+
+                <span class="star-core">
+                    ✦
+                </span>
+
+                <span class="star-label">
+                    O sítio
+                </span>
+
+            </button>
+
+
+            <!-- =================================
+                 ESTRELA SECRETA
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star secret-star"
+                data-memory="secret"
+                style="left: 25%; top: 70%;"
+                aria-label="Memória secreta">
+
+                <span class="star-core">
+                    ?
+                </span>
+
+                <span class="star-label">
+                    ?
+                </span>
+
+            </button>
+
+
+            <!-- =================================
+                 MEMÓRIA ESPECIAL
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star"
+                data-memory="special"
+                style="left: 55%; top: 68%;"
+                aria-label="Uma memória especial">
+
+                <span class="star-core">
+                    ✦
+                </span>
+
+                <span class="star-label">
+                    Uma memória
+                </span>
+
+            </button>
+
+
+            <!-- =================================
+                 ESTRELA FINAL
+            ================================== -->
+
+            <button
+                type="button"
+                class="memory-star final-star locked"
+                data-memory="anniversary"
+                style="left: 82%; top: 75%;"
+                aria-label="27 de setembro de 2025"
+                aria-disabled="true">
+
+                <span class="star-core">
+                    ♥
+                </span>
+
+                <span class="star-label">
+                    27.09.2025
+                </span>
+
+            </button>
+
+        </section>
+
+
+        <!-- ====================================
+             PROGRESSO
+        ===================================== -->
+
+        <div class="memory-progress">
+
+            <span id="progressText">
+                0 de 6 estrelas descobertas
+            </span>
+
+            <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="6"
+                aria-valuenow="0">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ====================================
+             O CÉU DO DIA 27
+             ESCONDIDO ATÉ DESBLOQUEAR
+        ===================================== -->
+
+        <section
+            class="day27-section locked-section"
+            id="day27Section"
+            aria-hidden="true">
+
+            <div class="day27-content">
+
+                <span class="day27-date">
+                    27 · 09 · 2025
+                </span>
+
+                <h2>
+                    O céu daquele dia ✨
+                </h2>
+
+                <p>
+                    O dia em que o nosso universo
+                    deixou de ser apenas uma história
+                    e passou a ser oficialmente nosso.
+                </p>
+
+                <div class="relationship-counter" aria-live="polite">
+                    <span>Estamos juntas há</span>
+                    <strong id="relationshipDays">—</strong>
+                    <span id="relationshipTime">calculando...</span>
+                </div>
+
+
+                <!-- =================================
+                     FOTO DO CÉU
+                ================================== -->
+
+                <div class="day27-sky-photo">
+
+                    <img
+                        src="./assets/fotos/ceu-27-09-2025.png"
+                        alt="O céu do dia 27 de setembro de 2025"
+                    >
+
+                </div>
+
+
+                <!-- =================================
+                     CONSTELAÇÃO DO DIA 27
+                ================================== -->
+
+                <div
+                    class="day27-constellation"
+                    id="day27Constellation">
+
+                    <div class="day27-star star-1">
+                        ✦
+                    </div>
+
+                    <div class="day27-star star-2">
+                        ✦
+                    </div>
+
+                    <div class="day27-star star-3">
+                        ✦
+                    </div>
+
+                    <div class="day27-star star-4">
+                        ✦
+                    </div>
+
+                    <div class="day27-star star-5">
+                        ✦
+                    </div>
+
+                    <div class="day27-star star-6">
+                        ✦
+                    </div>
+
+                    <div class="day27-star star-7">
+                        ✦
+                    </div>
+
+                    <div
+                        class="day27-constellation-center">
+                        ❤️
+                    </div>
+
+                </div>
+
+
+                <span class="day27-caption">
+                    Algumas estrelas ficam para sempre.
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+         MODAL DA MEMÓRIA
+    ========================================= -->
+
+    <div
+        class="memory-modal"
+        id="memoryModal"
+        aria-hidden="true">
+
+        <!-- FUNDO -->
+
+        <div
+            class="modal-overlay"
+            id="modalOverlay">
+        </div>
+
+
+        <!-- CONTEÚDO -->
+
+        <div
+            class="memory-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="memoryTitle">
+
+            <!-- FECHAR -->
+
+            <button
+                type="button"
+                class="close-modal"
+                id="closeModal"
+                aria-label="Fechar memória">
+
+                ×
+
+            </button>
+
+
+            <!-- DATA -->
+
+            <span
+                class="memory-date"
+                id="memoryDate">
+            </span>
+
+
+            <!-- TÍTULO -->
+
+            <h3 id="memoryTitle"></h3>
+
+
+            <!-- TEXTO -->
+
+            <p id="memoryText"></p>
+
+
+            <!-- FOTO -->
+
+            <div
+                class="memory-photo"
+                id="memoryPhoto">
+
+                <span>
+                    Sua foto aparecerá aqui ❤️
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
